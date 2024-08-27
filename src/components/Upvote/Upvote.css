@@ -1,15 +1,41 @@
 /* Upvote.css */
 
 .upvote-container {
+    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1rem;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  
+  }
+
+  .upvote-container > div:nth-child(1){
+    width: 80%;
+    padding: 1rem;
+    background-color: #f4f6f8;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+
+  .upvote-container > div:nth-child(2) {
+    width: 20%;
   }
 
   .upvote-icon {
     margin-left: auto;
+  }
+
+  img {
+    background-color: white; /*#353A40 ;*/
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  img.selected{
+    background-color: #253CF2 ;
   }

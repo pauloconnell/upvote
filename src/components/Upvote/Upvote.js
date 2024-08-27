@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'; 
+import React, { useState } from 'react'; 
 import ArrowUpload from '../../icons/arrow-up.svg';
 import Plus from '../../icons/plus.svg';
 import './Upvote.css';
@@ -21,10 +21,11 @@ function Upvote() {
         }
   
     return(
-      <div><h2> Upvote component will go here</h2>
+      <div>
         <div class="upvote-container">
-          Name to be Upvoted            {renderVotes()}  <img src={ArrowUpload} alt="Arrow Upload Icon" />
-          
+          <div>
+                   {renderVotes()}  <img src={ArrowUpload} alt="Arrow Upload Icon" />
+          </div>
           <div onClick={handleUpvote} class="upvote-icon" ><img src={Plus} alt="Plus Icon"  /> </div>
         </div>
       </div>

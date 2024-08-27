@@ -1,0 +1,12 @@
+.list-container.selected {
+    background-color: E5E8FD;
+
+}
+
+.main-container {
+    padding: 1rem;
+    background-color: #f4f6f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
