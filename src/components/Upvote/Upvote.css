@@ -1,0 +1,15 @@
+/* Upvote.css */
+
+.upvote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .upvote-icon {
+    margin-left: auto;
+  }
