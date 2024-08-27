@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import ArrowUpload from '../../icons/arrow-up.svg';
 import Plus from '../../icons/plus.svg';
-//import  Plus  from '../plus.svg';
-//import { arrow-upload } from '../icon/arrow-upload.svg';
-//import { Logo } from 'logo.svg';
+
 class Upvote extends Component {
 
 
@@ -20,4 +18,4 @@ class Upvote extends Component {
   }
 }
 
-export default Upvote; // Don’t forget to use export default!
+export default Upvote; 
