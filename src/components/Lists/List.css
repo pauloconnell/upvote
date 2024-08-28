@@ -4,9 +4,31 @@
 }
 
 .main-container {
-    padding: 1rem;
+    
     background-color: #f4f6f8;
     border: 1px solid #ccc;
     border-radius: 5px;
+    min-width: 400px;
 }
 
+.btn-primary {
+    
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    
+    font-size: 16px;
+    margin: 4px auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s; /* Smooth transition */
+    }
+    
+.btn-primary:hover {
+    background-color: #45a049; /* Darker green */
+    
+}

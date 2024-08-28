@@ -6,17 +6,23 @@
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
+    max-width: 90vh;
+    background-color: #F4F6F8;
   
+  }
+
+  .upvote-container.selected {
+    background-color: #E5E8FD;
   }
 
   .upvote-container > div:nth-child(1){
     width: 80%;
-    padding: 1rem;
-    background-color: #f4f6f8;
+    min-height: 35px;
     border: 1px solid black;
     border-radius: 8px;
     display: flex;
     justify-content: flex-start;
+    overflow: auto;
     
   }
 
@@ -27,13 +33,19 @@
   .upvote-icon {
     margin-left: auto;
   }
+  .svg-icon {
+    fill: #343A40;
+  }
+  .svg-icon.selected {
+    fill: #253CF2;
+  }
 
   img {
-    background-color: white; /*#353A40 ;*/
+    
     width: 35px;
     height: 35px;
     border-radius: 10px;
-    margin-right: 10px;
+    
   }
 
   img.selected{

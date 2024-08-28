@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Upvote from './components/Upvote/Upvote';
 import List from './components/Lists/List';
+import { VoteProvider } from './components/VoteProvider';
 
 function App() {
   return (
+    
     <div className="App">
       <header className="App-header">
         <h1> Vote App </h1>
-        <List />
+        <VoteProvider>
+          <List />
+          
+        </VoteProvider>
         <img src={logo} className="App-logo" alt="logo" />
       
       </header>
