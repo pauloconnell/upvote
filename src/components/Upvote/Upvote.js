@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'; 
+import React, { useContext } from 'react'; 
 import ArrowUpload from '../../icons/arrow-up.svg';
 import Plus from '../../icons/plus.svg';
 import './Upvote.css';
@@ -8,16 +8,14 @@ import { VoteContext } from '../VoteProvider'
 function Upvote(props) {
 
         const [voteTracker, setVoteTracker] = useContext(VoteContext);
-       // const [count, setCount] = useState(0);
        
-        //const votes = useContext(MyContext)
+       
+        
         const handleUpvote = () => {
+                                                    // only allow votes to be toggled after component has been selected
           if(props.selected){
-            //setCount(count + 1);
-            console.log("add vote to ", voteTracker[props.index], props.index)
-            let newVotes =  voteTracker.map((item, i) => (i == props.index ? item + 1 : item))
+            let newVotes =  voteTracker.map((item, i) => (i === Number(props.index) ? item + 1 : item))
             setVoteTracker(newVotes);
-            console.log("added ", voteTracker[props.index], props.index)
           }
           
         };
@@ -34,11 +32,11 @@ function Upvote(props) {
   
     return(
       <div>
-        <div className={`upvote-container ${props.selected? 'selected' : '' }`} >
+        <div className={`upvote-container ${props.selected? 'selected' : '' }`} data-testid={props.index} >
           <div>
                    {renderVotes()}  
           </div>
-          <div onClick={handleUpvote} className="upvote-icon" ><img src={Plus} alt="Plus Icon"  /> </div>
+          <div onClick={handleUpvote} className="upvote-icon"  ><img src={Plus} alt="Plus Icon"  /> </div>
         </div>
       </div>
     );

@@ -11,12 +11,12 @@ function List() {
         const [voteTracker, setVoteTracker] = useContext(VoteContext);
       
         const selectList = (index) => {
-            if(listSelected[index] == true){
+            if(listSelected[index] === true){
                 return;
             }
-            const newList = listSelected.map((item, i) => (i == index ? true : false))
+            const newList = listSelected.map((item, i) => (i === index ? true : false))
             setListSelected(newList);
-            console.log(index, "now votes are: ", voteTracker[index]);
+           
           
         };
 
@@ -30,7 +30,7 @@ function List() {
         
         <div className="container">
             First: {voteTracker[0]} Second: {voteTracker[1]} Third: {voteTracker[2]}
-            <button class="btn-primary" onClick={resetVotes} >Reset Votes</button>
+            <button className="btn-primary" onClick={resetVotes} >Reset Votes</button>
             <div className="main-container">
                 <div className="list-container" onClick={() => selectList(0)}>
              
