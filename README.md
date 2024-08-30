@@ -3,8 +3,7 @@
 
 
 
-
-![alt text](image.png)
+![alt text](image-1.png)
 
 #  The three Upvote Components are contained in the  List component
 

@@ -7,6 +7,7 @@
   --selected-icon-color: #253CF2;
   --background-color: #F4F6F8;
   --selected-background-color: #E5E8FD;
+  --upvote-border-color: #ccc;
 
 }
 
@@ -29,8 +30,8 @@
   width: 487px;
   padding-left: 2px;
   min-height: 78px;
-  border: 1px solid black;
-  border-radius: 8px;
+  border: 2px solid var(--upvote-border-color);
+  border-radius: 11px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
