@@ -22,6 +22,7 @@ function List() {
 
         const resetVotes = () =>{
             setVoteTracker([0, 0, 0]);
+            setListSelected([false, false, false]);
         }
         
 
@@ -32,7 +33,7 @@ function List() {
             First: {voteTracker[0]} Second: {voteTracker[1]} Third: {voteTracker[2]}
             <button className="btn-primary" onClick={resetVotes} >Reset Votes</button>
             <div className="main-container">
-                
+
                 <div  onClick={() => selectList(0)}>
                    <Upvote selected={listSelected[0]} index="0" />
                 </div>
