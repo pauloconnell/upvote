@@ -22,13 +22,12 @@
 }
 
 
-.upvote-container.selected {
-  background-color: var(--selected-background-color);
-}
+
 
 /* The votes arrows section    */
 .upvote-container>div:nth-child(1) {
   width: 487px;
+  padding-left: 2px;
   min-height: 78px;
   border: 1px solid black;
   border-radius: 8px;
@@ -36,6 +35,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow: auto;
+  
 
 }
 
@@ -49,7 +49,9 @@
 }
 
 .upvote-icon {
-  margin-left: 19px;
+  margin-left: 11px;
+  position: relative;
+  left: 5px;
 }
 
 .arrow-up {
@@ -60,12 +62,12 @@
   fill: var(--selected-icon-color);
 }
 
-/* this can reproduce the icon's background outline shown in wireframe -but instructions say to just use same background color */
+/* icon's background outline shown in wireframe -background color denotes selected state */
 .img-container {
   background-color: var(--background-color);
-  width: 58px;
-  height: 50px;
-  margin: 10px 0px 10px 10px;
+  width: 54px;
+  height: 54px;
+  margin: 10px 5px 10px 9px;
   display: flex;
   align-items: center;
   justify-content: center;
