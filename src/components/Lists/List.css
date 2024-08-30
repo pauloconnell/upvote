@@ -8,7 +8,9 @@
     background-color: #f4f6f8;
     border: 1px solid #ccc;
     border-radius: 5px;
-    min-width: 400px;
+    width: 615px;
+    height: 390px;
+    
 }
 
 .btn-primary {

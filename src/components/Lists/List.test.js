@@ -11,7 +11,7 @@ test('ensure unclicked component is not selected', async () => {
         <List  />
     </VoteProvider>
   );
-  // Get the 2nd 'upVote' component via data-testid attribute
+  // Get the test 'upVote' component via data-testid attribute
   const voteComponent1 = screen.getByTestId("1");
   
   // Ensure class 'selected' has not been added yet

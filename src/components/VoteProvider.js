@@ -14,12 +14,15 @@ const VoteProvider = ({ children }) => {
     }
   });
 
-  useEffect(() => {
+  useEffect(() => {                                                  // useEffect hook updates the local storage when the state (voteTracker) changes. 
     localStorage.setItem('myData', JSON.stringify(voteTracker));
   }, [voteTracker]);
 
-  return (
-    <VoteContext.Provider value={[voteTracker, setVoteTracker]}>
+
+                                                                    
+  console.log(voteTracker);
+  return (                                                          // this is the boilerplate for the context provider.
+    <VoteContext.Provider value={[voteTracker, setVoteTracker]}>    
       {children}
     </VoteContext.Provider>
   );

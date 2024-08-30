@@ -9,12 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1> Vote Tracker </h1>
+        
         <VoteProvider>
           <List />
-
         </VoteProvider>
-        <img src={logo} className="App-logo" alt="logo" />
-      
       </header>
     </div>
   );

@@ -1,3 +1,34 @@
+
+# Scrawlr Code Assessment
+
+
+
+
+![alt text](image.png)
+
+#  The three Upvote Components are contained in the main list component
+
+# The VoteProvider in App.js provides global state and uses Local Storage persists state onChange with useEffect
+
+# Any wrapped Component:   import { VoteContext } from '../VoteProvider'  , can access:    const [voteTracker, setVoteTracker] = useContext(VoteContext);
+
+# Test: npm test => Testing List Component => ensuring upVote component reacts onClick to add Class 'selected' which engages the CSS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
