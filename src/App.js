@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import List from './components/Lists/List';
 import { VoteProvider } from './components/VoteProvider';

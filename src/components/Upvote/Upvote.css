@@ -1,74 +1,84 @@
 /* Upvote.css */
+
+
+
 :root {
   --icon-color: #343A40;
   --selected-icon-color: #253CF2;
   --background-color: #F4F6F8;
   --selected-background-color: #E5E8FD;
-  /* this was only used to show groups in example, seems to not be wanted --img-background-color: #EEEEEE; */
+
 }
 
 
 
 .upvote-container {
-    
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 37px 25px 0px 22px;
-    background-color: var(--background-color);
-    border-radius: 15px;
-  
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 37px 25px 0px 22px;
+  background-color: var(--background-color);
+  border-radius: 15px;
+}
 
-  .upvote-container.selected {
-    background-color:var(--selected-background-color); 
-  }
 
-  .upvote-container > div:nth-child(1){
-    width: 487px;
-    min-height: 78px;
-    border: 1px solid black;
-    border-radius: 8px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: auto;
-    
-  }
+.upvote-container.selected {
+  background-color: var(--selected-background-color);
+}
 
-  .upvote-container > div:nth-child(2) {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
+/* The votes arrows section    */
+.upvote-container>div:nth-child(1) {
+  width: 487px;
+  min-height: 78px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
 
-  .upvote-icon {
-    margin-left: auto;
-  }
-  .arrow-up {
-    fill: var(--icon-color); 
-  }
-  .selected .arrow-up {
-    fill:var(--selected-icon-color); 
-  }
+}
 
-  .img-container {
-    background-color:var(--background-color); 
-    width: 50px;
-    height: 50px;
-    margin: 10px 0px 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-  }
-  .selected .img-container {
-    background-color:var(--selected-background-color); 
-  }
-  img {
-    width: 35px;
-    height: 35px;
-    border-radius: 10px;
-  }
+
+
+/* The upvote '+' icon/button section   */
+.upvote-container>div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upvote-icon {
+  margin-left: 19px;
+}
+
+.arrow-up {
+  fill: var(--icon-color);
+}
+
+.selected .arrow-up {
+  fill: var(--selected-icon-color);
+}
+
+/* this can reproduce the icon's background outline shown in wireframe -but instructions say to just use same background color */
+.img-container {
+  background-color: var(--background-color);
+  width: 58px;
+  height: 50px;
+  margin: 10px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* icon's background color changes with components 'selected' state */
+.selected .img-container {
+  background-color: var(--selected-background-color);
+}
+
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}

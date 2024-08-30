@@ -6,13 +6,13 @@
 
 ![alt text](image.png)
 
-#  The three Upvote Components are contained in the main list component
+#  The three Upvote Components are contained in the  List component
 
 # The VoteProvider in App.js provides global state and uses Local Storage persists state onChange with useEffect
 
-# Any wrapped Component:   import { VoteContext } from '../VoteProvider'  , can access:    const [voteTracker, setVoteTracker] = useContext(VoteContext);
+## Any wrapped Component can:   import { VoteContext } from '../VoteProvider'  , and access:    const [voteTracker, setVoteTracker] = useContext(VoteContext);
 
-# Test: npm test => Testing List Component => ensuring upVote component reacts onClick to add Class 'selected' which engages the CSS 
+# Test: I've installed npm package 'jest', to run tests: npm test => Tests List Component => ensuring clicking on any upVote component adds Class 'selected' which engages the CSS
 
 
 

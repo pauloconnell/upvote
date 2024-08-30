@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'; 
-import ArrowUpload from '../../icons/arrow-up.svg';
 import Plus from '../../icons/plus.svg';
 import './Upvote.css';
 import { VoteContext } from '../VoteProvider'
